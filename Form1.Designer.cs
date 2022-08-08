@@ -96,6 +96,10 @@
             // CuantComboBox
             // 
             this.CuantComboBox.FormattingEnabled = true;
+            this.CuantComboBox.Items.AddRange(new object[] {
+            "ZigZag",
+            "matrix simple calculator",
+            "jpeg quality factor"});
             this.CuantComboBox.Location = new System.Drawing.Point(176, 357);
             this.CuantComboBox.Name = "CuantComboBox";
             this.CuantComboBox.Size = new System.Drawing.Size(175, 21);

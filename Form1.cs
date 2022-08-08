@@ -216,7 +216,7 @@ namespace JpegCompression
                     {
                         richTextBox.AppendText(jpgLogic.DctBlueDiff[iy / 2 + y, jx / 2 + x].ToString("N2") + "  ");
                     }
-                    richTextBox.AppendText("\n"); 
+                    richTextBox.AppendText("\n\n"); 
                 }
                 richTextBox.AppendText("---------\n");
                 richTextBox.AppendText("\nDCT Cr\n");
@@ -226,7 +226,7 @@ namespace JpegCompression
                     {
                         richTextBox.AppendText(jpgLogic.DctRedDiff[iy / 2 + y, jx / 2 + x].ToString("N2") + "  ");
                     }
-                    richTextBox.AppendText("\n"); 
+                    richTextBox.AppendText("\n\n"); 
                 }
                 richTextBox.AppendText("---------\n");
             }
@@ -240,7 +240,7 @@ namespace JpegCompression
                     {
                         richTextBox.AppendText(Math.Round(jpgLogic.QuantLuminance[iy + y, jx + x]) + "  ");
                     }
-                    richTextBox.AppendText("\n");
+                    richTextBox.AppendText("\n\n");
                 }
                 richTextBox.AppendText("---------\n");
                 richTextBox.AppendText("\nQuantization Cb\n");
@@ -250,7 +250,7 @@ namespace JpegCompression
                     {
                         richTextBox.AppendText(Math.Round(jpgLogic.QuantBlueDiff[iy / 2 + y, jx / 2 + x]) + "  ");
                     }
-                    richTextBox.AppendText("\n");
+                    richTextBox.AppendText("\n\n");
                     
                 }
                 richTextBox.AppendText("---------\n");
@@ -261,7 +261,7 @@ namespace JpegCompression
                     {
                         richTextBox.AppendText(Math.Round(jpgLogic.QuantRedDiff[iy / 2 + y, jx / 2 + x]) + "  ");
                     }
-                    richTextBox.AppendText("\n"); 
+                    richTextBox.AppendText("\n\n"); 
                 } 
                 
             }
@@ -325,9 +325,10 @@ namespace JpegCompression
                 {
                     richTextBox.AppendText(block[y, x] + "  ");
                 }
-                richTextBox.AppendText("\n");
-                richTextBox.AppendText("---------\n");
+                richTextBox.AppendText("\n\n");
+                
             }
+            richTextBox.AppendText("---------\n");
         }
     }
 }
